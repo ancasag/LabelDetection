@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7193b58-70c0-41ad-a69a-50587e0858c8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XiPYoskiI6yBAnEY8q126VoLDU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Stoma/labelimg_stoma-master" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7193b58-70c0-41ad-a69a-50587e0858c8" name="Default Changelist" comment="" />
+      <created>1581525991848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581525991848</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581683885332">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581683885332" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581669702762">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="603" y="387" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1073@0.27.1920.1073" timestamp="1581534334538" />
+    <state x="603" y="407" key="com.intellij.ide.util.TipDialog/1920.40.1920.1080/0.67.1920.1013@0.67.1920.1013" timestamp="1581536579753" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581669702762" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581583240070" />
+    <state x="1946" y="0" width="1585" height="1011" maximized="true" key="dock-window-1" timestamp="1581683870192">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1946" y="0" width="1585" height="1011" maximized="true" key="dock-window-1/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581683870192" />
+    <state x="1946" y="0" width="1585" height="1011" key="dock-window-1/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581681484205" />
+    <state x="685" y="444" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581536591705">
+      <screen x="0" y="67" width="1920" height="1013" />
+    </state>
+    <state x="685" y="451" width="540" height="174" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1920.1080/0.67.1920.1033@0.67.1920.1033" timestamp="1581536565308" />
+    <state x="685" y="444" width="540" height="175" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.40.1920.1080/0.67.1920.1013@0.67.1920.1013" timestamp="1581536591705" />
+  </component>
+</project>
