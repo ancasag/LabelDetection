@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7193b58-70c0-41ad-a69a-50587e0858c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensemble/ensembleOptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensemble/ensembleOptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensemble/ensembleOptionsTTA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensemble/ensembleOptionsTTA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensemble/mainModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensemble/mainModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labelDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/labelDetection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/resources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/EfficientDetExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/EfficientDetExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/FCOSExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/FCOSExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/FSAFExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/FSAFExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/MaskRCNNExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/MaskRCNNExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/MxNetSSDExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/MxNetSSDExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/RetinaNetExampleDD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/RetinaNetExampleDD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/notebookMaskRCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/notebookMaskRCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/notebookmenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/notebookmenu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predict/predict_batch_retinanet.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict/predict_batch_retinanet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict/tipoModelo.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict/tipoModelo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resources.qrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
