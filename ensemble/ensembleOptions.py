@@ -70,6 +70,7 @@ class Ui_Dialog(object):
         self.checkBox_med.setObjectName("checkBox_med")
         self.checkBox_none = QtWidgets.QCheckBox(Ui_Dialog)
         self.checkBox_none.setGeometry(QtCore.QRect(440, 370, 141, 23))
+        self.checkBox_none.setChecked(True)
         self.checkBox_none.setObjectName("checkBox_none")
         self.checkBox_blue = QtWidgets.QCheckBox(Ui_Dialog)
         self.checkBox_blue.setGeometry(QtCore.QRect(440, 420, 161, 23))
@@ -132,6 +133,7 @@ class Ui_Dialog(object):
         self.line.setObjectName("line")
         self.radioButton_aff = QtWidgets.QRadioButton(Ui_Dialog)
         self.radioButton_aff.setGeometry(QtCore.QRect(160, 610, 112, 23))
+
         self.radioButton_aff.setObjectName("radioButton_aff")
         self.radioButton_con = QtWidgets.QRadioButton(Ui_Dialog)
         self.radioButton_con.setGeometry(QtCore.QRect(410, 610, 112, 23))
@@ -155,6 +157,7 @@ class Ui_Dialog(object):
         self.radioButton_reti.setObjectName("radioButton_reti")
         self.radioButton_yolo = QtWidgets.QRadioButton(Ui_Dialog)
         self.radioButton_yolo.setGeometry(QtCore.QRect(160, 50, 112, 23))
+        self.radioButton_yolo.setChecked(True)
         self.radioButton_yolo.setObjectName("radioButton_yolo")
         self.label_2 = QtWidgets.QLabel(Ui_Dialog)
         self.label_2.setGeometry(QtCore.QRect(30, 10, 341, 17))
@@ -201,6 +204,7 @@ class Ui_Dialog(object):
         self.btngroup2.addButton(self.radioButton_efi)
         self.btngroup2.addButton(self.radioButton_fsaf)
         self.btngroup2.addButton(self.radioButton_fcos)
+        self.radioButton_aff.setChecked(True)
 
         # Aquí se conecta el botón de Ok con la funcionalidad que quieres.
         # En concreto, el método de actualizar que se define luego.
@@ -212,7 +216,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.checkBox_avg.setText(_translate("Dialog", "Average blurring"))
-        self.label.setText(_translate("Dialog", "Select the techniques:"))
+        self.label.setText(_translate("Dialog", "Select the techniques for test-time augmentation."))
         self.checkBox_biBlu.setText(_translate("Dialog", "Bilateral blurring"))
         self.checkBox_crop.setText(_translate("Dialog", "Crop"))
         self.checkBox_blu.setText(_translate("Dialog", "Blurring"))
@@ -253,13 +257,13 @@ class Ui_Dialog(object):
         self.radioButton_mask.setText(_translate("Dialog", "Mask R-CNN"))
         self.radioButton_reti.setText(_translate("Dialog", "RetinaNet"))
         self.radioButton_yolo.setText(_translate("Dialog", "YOLO"))
-        self.label_2.setText(_translate("Dialog", "Choose the type of model you are going to use:"))
+        self.label_2.setText(_translate("Dialog", "Choose the type of model you are going to apply:"))
         self.radioButton_fast.setText(_translate("Dialog", "MXnet - Faster R-CNN"))
         self.radioButton_mxYolo.setText(_translate("Dialog", "MXnet - YOLO"))
         self.radioButton_efi.setText(_translate("Dialog", "Efficient Det "))
         self.radioButton_fsaf.setText(_translate("Dialog", "FSAF"))
         self.radioButton_fcos.setText(_translate("Dialog", "FCOS"))
-        self.label_3.setText(_translate("Dialog", "Select the techniques:"))
+        self.label_3.setText(_translate("Dialog", "Select the ensmeble method."))
         self.label_4.setText(_translate("Dialog", "Select the level of confidence:"))
         self.lineEdit.setText(_translate("Dialog", "0.4"))
 

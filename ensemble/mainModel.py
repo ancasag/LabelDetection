@@ -24,6 +24,7 @@ listaModels=[]
 def selectTecniques(self, avg, bila,blur,chanhsv,chanlab,crop,drop,elas,histo,vflip,hflip,hvflip,gamma,blurGa,gaunoise,
                     invert,median, none, raiseB, raiseGreen, raiseHue, raisered, raisesatu, raiseval,resize, rot10,
                     rot90, rot180, rot270, saltpe, sharpen, sift, shear, trans):
+    listaModels=[]
     if avg == True:
         listaModels.append("avgBlur")
     if bila == True:
@@ -156,7 +157,7 @@ def selectModel(self,rb_1,rb_2,rb_3,rb_4,rb_5,rb_6, rb_7, rb_8, rb_9):
         listFich = listdir(targetDirPath)
         if len(listFich) == 2:
             fichParams = glob.glob(targetDirPath + '/*.params', recursive=False)
-            fichTxt = glob.glob(targetDirPath + '/*.txt', recursive=False) 
+            fichTxt = glob.glob(targetDirPath + '/*.txt', recursive=False)
             if (len(fichParams) == 1 and len(fichTxt) == 1):
                 model = yoloResnet = ensemble.testTimeAugmentation.MXnetYoloPred(fichParams[0], fichTxt[0])
             else:

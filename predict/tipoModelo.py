@@ -26,6 +26,7 @@ class Ui_Dialog(object):
         self.label.setObjectName("label")
         self.radioButton = QtWidgets.QRadioButton(Ui_Dialog)
         self.radioButton.setGeometry(QtCore.QRect(40, 50, 112, 23))
+        self.radioButton.setChecked(True)
         self.radioButton.setObjectName("radioButton")
         self.radioButton_2 = QtWidgets.QRadioButton(Ui_Dialog)
         self.radioButton_2.setGeometry(QtCore.QRect(40, 90, 112, 23))

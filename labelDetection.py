@@ -274,11 +274,11 @@ class MainWindow(QMainWindow, WindowMixin):
                          'Ctrl+A', 'hide', getStr('showAllBoxDetail'),
                          enabled=False)
         detect = action('Detect and save', self.detectStoma,
-                        'z', 'images', 'Predict the fold', enabled=False)
+                        'z', 'detect', 'Predict the fold', enabled=False)
         excel = action('Generate Excel', self.generarExcel,
                        'e', 'excel', 'Generate excel', enabled=False)
         ensemble = action('Apply TTA', self.ensembleMethod,
-                       't', 'ensemble', 'Apply ensemble techniques', enabled=False)
+                       't', 'tta', 'Apply ensemble techniques', enabled=False)
         trainModel = action('Generate training files', self.trainModel,
                           't', 'trainModel', 'Generate notebooks for training', enabled=False)
         self.editButton.setDefaultAction(excel)
@@ -559,7 +559,7 @@ class MainWindow(QMainWindow, WindowMixin):
                 box.resize(179, 1)
                 box.setWindowTitle("Processing...")
                 box.show()
-                ensemble.mainTTA.tta(model, tecnhiques, path, option,float(ui.le_1))
+                ensemble.mainTTA.tta(model, tecnhiques, path, option,float(ui.conf))
                 box.close()
             self.defaultSaveDir = path
             self.importDirImages(path)
@@ -1325,6 +1325,7 @@ class MainWindow(QMainWindow, WindowMixin):
         else:
             targetDirPath = ustr(defaultOpenDirPath)
 
+        self.defaultSaveDir = targetDirPath
         self.importDirImages(targetDirPath)
 
     def importDirImages(self, dirpath):

@@ -53,10 +53,25 @@ sudo apt-get install pyqt5-dev-tools
 pip3 install -r requirements.txt
 make qt5py3
 ```
+
+If you want to run models created with the [MaskRCNN Keras library](https://github.com/matterport/Mask_RCNN), it is necessary to execute the following instructions:
+
+```bash
+git clone https://github.com/matterport/Mask_RCNN
+cd Mask_RCNN
+pip3 install -r requirements.txt
+python3 setup.py install
+cd ..
+```
+
+
 3. Run labelstoma:
 ```bash
 python3 labelDetection.py
 ```
+
+
+
 
 ## Using detection models
 

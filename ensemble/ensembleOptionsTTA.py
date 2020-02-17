@@ -1,4 +1,4 @@
-import ensemble
+import ensemble.ensemble
 import argparse
 import numpy as np
 import predict.generateXML
@@ -14,7 +14,7 @@ def ensembleOptions(datasetPath, option):
 
     #we get a list that contains as many pairs as there are xmls in the first folder, 
     #these pairs indicate first the name of the xml file and then contain a list with all the objects of the xmls
-    boxes = ensemble.listarCuadrados(datasetPath)
+    boxes = ensemble.ensemble.listarCuadrados(datasetPath)
 
     #we separate by images and we get a list that groups the objects by the iou> 0.5
     for nombre,lis in boxes:
@@ -34,7 +34,7 @@ def ensembleOptions(datasetPath, option):
         wI = filename.find("size").find("width").text
         hI = filename.find("size").find("height").text
         d = filename.find("size").find("depth").text
-        box = ensemble.uneBoundingBoxes(lis)
+        box = ensemble.ensemble.uneBoundingBoxes(lis)
         #now we pass the non-maximunSupression to each list within the list obtained
         for rectangles in box:
             lista = []
@@ -45,17 +45,17 @@ def ensembleOptions(datasetPath, option):
     
             if option == 'consensus':
                 if len(np.array(lista))>=math.ceil(numFich/2):#if the number of boxes is greater than half the number of files
-                    pick,prob = ensemble.nonMaximumSuppression(np.array(lista), 0.3)
+                    pick,prob = ensemble.ensemble.nonMaximumSuppression(np.array(lista), 0.3)
                     pick[0][5] = prob/numFich
     
     
             elif option == 'unanimous':
                 if len(np.array(lista))==numFich:#if the number of boxes is greater than half the number of files
-                    pick,prob = ensemble.nonMaximumSuppression(np.array(lista), 0.3)
+                    pick,prob = ensemble.ensemble.nonMaximumSuppression(np.array(lista), 0.3)
                     pick[0][5] = prob / numFich
     
             elif option == 'affirmative':
-                pick,prob = ensemble.nonMaximumSuppression(np.array(lista), 0.3)
+                pick,prob = ensemble.ensemble.nonMaximumSuppression(np.array(lista), 0.3)
                 pick[0][5] = prob / numFich
     
             if len(pick)!=0:

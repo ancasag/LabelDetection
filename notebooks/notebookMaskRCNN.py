@@ -98,8 +98,8 @@ def notebookMaskRCNN (path, tecnhiques, conf, option):
         data['cells'][10]['source'][0] = listaCla1
         data['cells'][10]['source'][1] = numImgAno
         data['cells'][13]['source'][0] = numImgTest
-        data['cells'][32]['source'][0] = listaCla1
-        data['cells'][32]['source'][1] = numImg
+        data['cells'][33]['source'][0] = listaCla1
+        data['cells'][33]['source'][1] = numImg
 
         # modificamos las tecnicas
         tec = 'myTechniques = ['

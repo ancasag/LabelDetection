@@ -36,5 +36,8 @@
 <file alias="strings-zh-CN">resources/strings/strings-zh-CN.properties</file>
 <file alias="images">resources/icons/images.jpeg</file>
 <file alias="excel">resources/icons/excel.png</file>
+<file alias="tta">resources/icons/tta.jpg</file>
+<file alias="detect">resources/icons/detect.jpg</file>
+<file alias="trainModel">resources/icons/trainModel.jpg</file>
 </qresource>
 </RCC>
