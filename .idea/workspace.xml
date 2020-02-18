@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7193b58-70c0-41ad-a69a-50587e0858c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/predict/predict_batch_retinanet.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict/predict_batch_retinanet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labelDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/labelDetection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +50,12 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581683885332" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581958621575">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582042964054">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="603" y="387" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1073@0.27.1920.1073" timestamp="1581534334538" />
     <state x="603" y="407" key="com.intellij.ide.util.TipDialog/1920.40.1920.1080/0.67.1920.1013@0.67.1920.1013" timestamp="1581536579753" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581958621575" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582042964054" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581583240070" />
     <state x="1946" y="0" width="1585" height="1011" maximized="true" key="dock-window-1" timestamp="1581683870192">
       <screen x="1920" y="0" width="1920" height="1080" />
