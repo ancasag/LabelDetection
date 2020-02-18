@@ -110,7 +110,7 @@ def notebookSSD (path, tecnhiques, conf, option):
     #imagesSinAno = list(paths.list_files(path+'/datasets/*.*', validExts=(".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".tif")))
     for i in imagesSinAno:
         shutil.move(i, path + '/datasets/unlabelled/')
-    shutil.make_archive(path + "/datasets", "zip", path + "/datasets/")
+    shutil.make_archive(path + "/datasets", "zip", path,"datasets")
     shutil.rmtree(path + "/datasets")
 def datasetSplit( Nproyecto, darknetPath, pathImages, porcentaje):
     listaFicheros = list(paths.list_files(pathImages,validExts=(".jpg")))

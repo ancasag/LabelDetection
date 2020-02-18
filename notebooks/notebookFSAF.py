@@ -116,7 +116,7 @@ def notebookFSAF (path, tecnhiques, conf, option):
     for i in imagesSinAno:
         shutil.move(i, path + '/datasets/unlabelled/')
 
-    shutil.make_archive(path + "/datasets", "zip", path + "/datasets/")
+    shutil.make_archive(path + "/datasets", "zip", path,"datasets")
     shutil.rmtree(path + "/datasets")
 
 def datasetSplit( Nproyecto, darknetPath, pathImages, porcentaje):

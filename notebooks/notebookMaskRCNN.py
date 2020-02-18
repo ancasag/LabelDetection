@@ -114,7 +114,7 @@ def notebookMaskRCNN (path, tecnhiques, conf, option):
     with open(notebook,'w') as json_file:
         json.dump(data,json_file, indent=4)
 
-    shutil.make_archive(path + "/dataset", "zip", path + "/dataset/")
+    shutil.make_archive(path + "/dataset", "zip", path,"dataset")
     shutil.rmtree(path + "/dataset")
 
 def datasetSplit( Nproyecto, darknetPath, pathImages, porcentaje):

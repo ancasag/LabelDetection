@@ -104,7 +104,7 @@ def notebookRetinaNet (path, tecnhiques, conf, option):
     for i in imagesSinAno:
         shutil.move(i, path + '/dataset/unlabelled/')
 
-    shutil.make_archive(path + "/dataset", "zip", path + "/dataset/")
+    shutil.make_archive(path + "/dataset", "zip", path,"dataset")
     shutil.rmtree(path + "/dataset")
 
 def datasetSplit( Nproyecto, darknetPath, pathImages, porcentaje):
