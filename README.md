@@ -43,33 +43,25 @@ This tool requires Python 3.6 and Qt5 and the packages listed in the ```requirem
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/ancasag/LabelDetection
+git clone --recursive https://github.com/ancasag/LabelDetection
 ```
 
 2. Install the necessary dependencies.
 
 ```bash
+cd LabelDetection
 sudo apt-get install pyqt5-dev-tools
 pip3 install -r requirements.txt
 make qt5py3
-```
-
-If you want to run models created with the [MaskRCNN Keras library](https://github.com/matterport/Mask_RCNN), it is necessary to execute the following instructions:
-
-```bash
-git clone https://github.com/matterport/Mask_RCNN
 cd Mask_RCNN
-pip3 install -r requirements.txt
-python3 setup.py install
+pip3 install . --user
 cd ..
 ```
 
-
-3. Run labelstoma:
+3. Run LabelDetection:
 ```bash
 python3 labelDetection.py
 ```
-
 
 
 
