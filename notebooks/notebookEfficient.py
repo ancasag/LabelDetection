@@ -59,7 +59,7 @@ def notebookEfficient (path, tecnhiques, conf, option):
         numImg = '!python3 train.py --snapshot imagenet --phi 0 --gpu 0 --random-transform --compute-val-loss --freeze-backbone --batch-size 4 --epochs 25 --steps ' + str(
             len(glob.glob(path + '/*.jpg')) // 4) + ' pascalCustom datasets/VOCdataset/'
 
-        numImg2 = '!python3 train.py --snapshot checkpoints/*/pascalCustom_30_*.h5 --phi 0 --gpu 0 --random-transform --compute-val-loss --freeze-bn  --batch-size 4 --epochs 25 --steps ' + str(
+        numImg2 = '!python3 train.py --snapshot checkpoints/*/pascalCustom_25_*.h5 --phi 0 --gpu 0 --random-transform --compute-val-loss --freeze-bn  --batch-size 4 --epochs 25 --steps ' + str(
             len(glob.glob(path + '/*.jpg')) // 4) + ' pascalCustom datasets/VOCdataset/'
         data['cells'][37]['source'][0] = numImg
         data['cells'][38]['source'][0] = numImg2
