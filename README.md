@@ -30,12 +30,8 @@ LabelDetection is a graphical tool that aims to facilitate all the steps require
 
 ## Installation and Requirements
 
-LabelDetection can be run both on Windows and Linux. 
+LabelDetection can be run on Linux. 
 
-### Installation Windows:
-1. Download the [LabelDetection](https://github.com/ancasag/LabelDetection/releases/download/v1.0/LabelDetection.zip) zip file.
-2. Unzip the downloaded file.
-3. Execute LabelDetection.exe.
 
 ### Installation Linux:
 This tool requires Python 3.6 and Qt5 and the packages listed in the ```requirements.txt``` file.
