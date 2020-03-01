@@ -39,7 +39,7 @@ This tool requires Python 3.6 and Qt5 and the packages listed in the ```requirem
 1. Clone this repository.
 
 ```bash
-git clone --recursive https://github.com/ancasag/LabelDetection
+git clone https://github.com/ancasag/LabelDetection
 ```
 
 2. Install the necessary dependencies.
@@ -49,9 +49,6 @@ cd LabelDetection
 sudo apt-get install pyqt5-dev-tools
 pip3 install -r requirements.txt
 make qt5py3
-cd Mask_RCNN
-pip3 install . --user
-cd ..
 ```
 
 3. Run LabelDetection:
