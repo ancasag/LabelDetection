@@ -8,16 +8,18 @@ import sys
 import os
 
 here = os.path.abspath(os.path.dirname(__file__))
-NAME = 'labelImg'
+NAME = 'labelDetection'
 REQUIRES_PYTHON = '>=3.0.0'
-REQUIRED_DEP = ['pyqt5', 'lxml']
+REQUIRED_DEP = ['pyqt5', 'lxml','clodsa==1.2.37','setuptools==40.6.2','gluoncv==0.5.0','tensorflow==1.14.0','imutils==0.5.1','tqdm==4.31.0','opencv_python==4.1.2.30','XlsxWriter==1.2.6','six==1.11.0','matplotlib==3.0.3','Keras==2.1.6','Keras-Applications==1.0.6','Keras-Preprocessing==1.0.5','keras-resnet==0.1.0',
+'keras-retinanet==0.5.1','numpy','Pillow==7.0.0','mxnet==1.5.0','progressbar2==3.47.0','sip==4.19.8','scikit_learn==0.22.1','future==0.17.1','pandas==0.23.4','imageio==2.5.0','scikit-image==0.14.2']
 about = {}
 
 with open(os.path.join(here, 'libs', '__init__.py')) as f:
     exec(f.read(), about)
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
+readme = ""
+#with open('README.md') as readme_file:
+#    readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
@@ -33,7 +35,19 @@ elif _platform == "darwin":
    SET_REQUIRES.append('py2app')
 
 required_packages = find_packages()
-required_packages.append('labelImg')
+required_packages.append('labelDetection')
+required_packages.append('ensemble')
+required_packages.append('EfficientDet')
+required_packages.append('kerasfcos')
+required_packages.append('FSAF')
+required_packages.append('FSAF/augmentor')
+required_packages.append('FSAF/generators')
+required_packages.append('FSAF/models')
+required_packages.append('FSAF/utils')
+required_packages.append('FSAF/yolo')
+required_packages.append('mrcnn')
+required_packages.append('notebooks')
+required_packages.append('predict')
 
 APP = [NAME + '.py']
 OPTIONS = {
@@ -85,25 +99,25 @@ class UploadCommand(Command):
 setup(
     app=APP,
     name=NAME,
-    version=about['__version__'],
-    description="LabelImg is a graphical image annotation tool and label object bounding boxes in images",
+    version="0.1.1",
+    description="LabelDetection is a graphical tool for using and creating detection models",
     long_description=readme + '\n\n' + history,
-    author="TzuTa Lin",
-    author_email='tzu.ta.lin@gmail.com',
-    url='https://github.com/tzutalin/labelImg',
+    author="Angela Casado",
+    author_email='angela.casado@unirioja.es',
+    url='https://github.com/ancasag/labelDetection',
     python_requires=REQUIRES_PYTHON,
-    package_dir={'labelImg': '.'},
+    package_dir={'labelDetection': '.'},
     packages=required_packages,
     entry_points={
         'console_scripts': [
-            'labelImg=labelImg.labelImg:main'
+            'labelDetection=labelDetection.labelDetection:main'
         ]
     },
     include_package_data=True,
     install_requires=REQUIRED_DEP,
     license="MIT license",
     zip_safe=False,
-    keywords='labelImg labelTool development annotation deeplearning',
+    keywords='labelDetection detection deeplearning',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -116,7 +130,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    package_data={'data/predefined_classes.txt': ['data/predefined_classes.txt']},
+    package_data={'data/predefined_classes.txt': ['data/predefined_classes.txt'],'notebooks': ['notebooks/*.ipynb']},
     options={'py2app': OPTIONS},
     setup_requires=SET_REQUIRES,
     # $ setup.py publish support.

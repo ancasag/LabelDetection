@@ -5,9 +5,11 @@ include README.rst
 
 include resources.qrc
 
+
 recursive-include data *
 recursive-include icons *
 recursive-include libs *
+recursive-include notebooks *
 
 recursive-exclude build-tools *
 recursive-exclude tests *
