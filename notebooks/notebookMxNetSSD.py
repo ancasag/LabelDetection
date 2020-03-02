@@ -6,11 +6,24 @@ import numpy as np
 import glob
 from imutils import paths
 from sklearn.model_selection import train_test_split
+import urllib.request
+from tqdm import tqdm
 
 
+class DownloadProgressBar(tqdm):
+    def update_to(self, b=1, bsize=1, tsize=None):
+        if tsize is not None:
+            self.total = tsize
+        self.update(b * bsize - self.n)
 def notebookSSD (path, tecnhiques, conf, option):
     #primero realizamos una copia del fichero en la carpeta de las imagenes
-    shutil.copy('notebooks/MxNetSSDExampleDD.ipynb', path+'/MxNetSSD.ipynb')
+    #shutil.copy('notebooks/MxNetSSDExampleDD.ipynb', path+'/MxNetSSD.ipynb')
+    url = "https://www.dropbox.com/s/bwiklggqbpjlen8/MxNetSSDExampleDD.ipynb?dl=1"
+    with DownloadProgressBar(unit='B', unit_scale=True,
+                             miniters=1, desc=url.split('/')[-1]) as t:
+        urllib.request.urlretrieve(url, filename='MxNetSSDExampleDD.ipynb', reporthook=t.update_to)
+
+    os.rename('MxNetSSDExampleDD.ipynb', path + '/MxNetSSD.ipynb', )
     notebook = path+'/MxNetSSD.ipynb'
     #borramos aquellas imagenes cuya anotacion esta vacia
     files = paths.list_files("/content/datasets/salida/output/", validExts='.xml')

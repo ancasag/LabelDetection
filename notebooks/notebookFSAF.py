@@ -6,11 +6,25 @@ import numpy as np
 import glob
 from imutils import paths
 from sklearn.model_selection import train_test_split
+import urllib.request
+from tqdm import tqdm
 
+
+class DownloadProgressBar(tqdm):
+    def update_to(self, b=1, bsize=1, tsize=None):
+        if tsize is not None:
+            self.total = tsize
+        self.update(b * bsize - self.n)
 
 def notebookFSAF (path, tecnhiques, conf, option):
     #primero realizamos una copia del fichero en la carpeta de las imagenes
-    shutil.copy('notebooks/FSAFExampleDD.ipynb', path+'/FSAF.ipynb')
+    #shutil.copy('notebooks/FSAFExampleDD.ipynb', path+'/FSAF.ipynb')
+    url = "https://www.dropbox.com/s/anhncb4mlcdkugb/FSAFExampleDD.ipynb?dl=0"
+    with DownloadProgressBar(unit='B', unit_scale=True,
+                             miniters=1, desc=url.split('/')[-1]) as t:
+        urllib.request.urlretrieve(url, filename='FSAFExampleDD.ipynb', reporthook=t.update_to)
+
+    os.rename('FSAFExampleDD.ipynb', path + '/FSAF.ipynb', )
     notebook = path+'/FSAF.ipynb'
     with open(notebook) as json_file:
         data = json.load(json_file)

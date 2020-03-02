@@ -7,11 +7,28 @@ import glob
 from imutils import paths
 from sklearn.model_selection import train_test_split
 import notebooks.pascal2yolo_1class
+import urllib.request
+from tqdm import tqdm
+
+
 import zipfile
+
+
+class DownloadProgressBar(tqdm):
+    def update_to(self, b=1, bsize=1, tsize=None):
+        if tsize is not None:
+            self.total = tsize
+        self.update(b * bsize - self.n)
 
 def notebookYOLO (path, tecnhiques, conf, option):
     #primero realizamos una copia del fichero en la carpeta de las imagenes
-    shutil.copy('notebooks/YOLOExampleDD.ipynb', path+'/YOLO.ipynb')
+    url = "https://www.dropbox.com/s/eyni0jk8brg3mrt/YOLOExampleDD.ipynb?dl=1"
+    with DownloadProgressBar(unit='B', unit_scale=True,
+                             miniters=1, desc=url.split('/')[-1]) as t:
+         urllib.request.urlretrieve(url, filename='YOLOExampleDD.ipynb', reporthook=t.update_to)
+
+    os.rename('YOLOExampleDD.ipynb', path+'/YOLO.ipynb',)
+    #shutil.copy('notebooks/YOLOExampleDD.ipynb', path+'/YOLO.ipynb')
     notebook = path+'/YOLO.ipynb'
     with open(notebook) as json_file:
         data = json.load(json_file)

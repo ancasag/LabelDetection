@@ -30,7 +30,7 @@ except ImportError:
     from PyQt4.QtGui import *
     from PyQt4.QtCore import *
 
-from combobox import ComboBox
+from fichs.combobox import ComboBox
 from libs.resources import *
 from libs.constants import *
 from libs.utils import *
@@ -51,7 +51,7 @@ from libs.ustr import ustr
 from libs.hashableQListWidgetItem import HashableQListWidgetItem
 import predict.tipoModelo
 import ensemble.ensembleOptions
-from generateExcel import generaExcel
+from fichs.generateExcel import generaExcel
 import notebooks.generateNotebook
 import notebooks.notebookmenu
 
