@@ -66,9 +66,6 @@ make qt5py3
 ```bash
 python3 labelDetection.py
 ```
-### Installation Windows:
-
-Work in progress.
 
 ## Using detection models
 
