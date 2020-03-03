@@ -30,10 +30,21 @@ LabelDetection is a graphical tool that aims to facilitate all the steps require
 
 ## Installation and Requirements
 
-LabelDetection can be run on Linux. 
+LabelDetection can be run on Linux and Windows. 
+
+### Get from PyPI but only python3.0 or above
+
+LabelDetection can be installed both in Linux and Windows using pip.
+
+``` 
+pip install labeldetection
+labelDetection
+``` 
 
 
-### Installation Linux:
+### Build from source
+
+#### Using Linux
 This tool requires Python 3.6 and Qt5 and the packages listed in the ```requirements.txt``` file.
 
 1. Clone this repository.
