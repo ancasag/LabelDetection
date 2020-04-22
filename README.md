@@ -72,7 +72,7 @@ python3 labelDetection.py
 Here is the [manual](https://unirioja-my.sharepoint.com/:b:/g/personal/joheras_unirioja_es/EVt3l57jORZKlseCuAypjiwBRqyl5j3pigDCpjcjELIqww?e=pPbTqf) to learn how to use LabelDetection. Below, you can also watch a video where LabelDetection works with a series of examples.
 
 
-[![Watch the video]](https://youtu.be/Lqf-IH1CaBE)
+[![Watch the video](https://unirioja-my.sharepoint.com/:i:/g/personal/joheras_unirioja_es/EWtzjL5555ZMi41N0mh1CwcBtArUaRCdeI69nwcWhF8otQ?e=sjShHw)](https://youtu.be/Lqf-IH1CaBE)
 
 ## Using detection models
 
