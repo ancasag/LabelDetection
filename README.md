@@ -13,18 +13,19 @@ LabelDetection is a graphical tool that aims to facilitate all the steps require
 
 
 0. [Installation](#installation-and-requirements)
-1. [Using detection models](#using-detection-models)
-2. [Test-time augmentation for object detection](#test-time-augmentation-for-object-detection)
+1. [How to use](#how-to-use)
+2. [Using detection models](#using-detection-models)
+3. [Test-time augmentation for object detection](#test-time-augmentation-for-object-detection)
    * [Ensemble options](#ensemble-options)
    * [Techniques for TTA](#techniques-for-tta)
    * [Execution](#execution)
-3. [Training new models](#training-new-models)
+4. [Training new models](#training-new-models)
    * [Available models](#available-models)
    * [Downloading datasets to Colab](#downloading-datasets-to-colab)
    * [Data distillation](#data-distillation)
-4. [Reports](#reports)
-5. [Citation](#citation)
-6. [Acknowledgements](#acknowledgements)
+5. [Reports](#reports)
+6. [Citation](#citation)
+7. [Acknowledgements](#acknowledgements)
 
 
 
@@ -66,6 +67,10 @@ make qt5py3
 ```bash
 python3 labelDetection.py
 ```
+## How to use
+
+Here is the [manual](https://unirioja-my.sharepoint.com/:b:/g/personal/joheras_unirioja_es/EVt3l57jORZKlseCuAypjiwBRqyl5j3pigDCpjcjELIqww?e=pPbTqf) to learn how to use LabelDetection. Below, you can also watch a video where LabelDetection works with a series of examples.
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/Lqf-IH1CaBE)
 
 ## Using detection models
 
