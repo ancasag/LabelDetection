@@ -23,9 +23,8 @@ LabelDetection is a graphical tool that aims to facilitate all the steps require
    * [Available models](#available-models)
    * [Downloading datasets to Colab](#downloading-datasets-to-colab)
    * [Data distillation](#data-distillation)
-5. [Reports](#reports)
-6. [Citation](#citation)
-7. [Acknowledgements](#acknowledgements)
+5. [Citation](#citation)
+6. [Acknowledgements](#acknowledgements)
 
 
 
