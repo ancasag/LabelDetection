@@ -19,7 +19,7 @@ class DownloadProgressBar(tqdm):
 def notebookFSAF (path, tecnhiques, conf, option):
     #primero realizamos una copia del fichero en la carpeta de las imagenes
     #shutil.copy('notebooks/FSAFExampleDD.ipynb', path+'/FSAF.ipynb')
-    url = "https://www.dropbox.com/s/anhncb4mlcdkugb/FSAFExampleDD.ipynb?dl=0"
+    url = "https://www.dropbox.com/s/anhncb4mlcdkugb/FSAFExampleDD.ipynb?dl=1"
     with DownloadProgressBar(unit='B', unit_scale=True,
                              miniters=1, desc=url.split('/')[-1]) as t:
         urllib.request.urlretrieve(url, filename='FSAFExampleDD.ipynb', reporthook=t.update_to)

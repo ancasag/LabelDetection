@@ -18,7 +18,7 @@ class DownloadProgressBar(tqdm):
 def notebookEfficient (path, tecnhiques, conf, option):
     #primero realizamos una copia del fichero en la carpeta de las imagenes
     #shutil.copy('notebooks/EfficientDetExampleDD.ipynb', path+'/EfficientDet.ipynb')
-    url = "https://www.dropbox.com/s/ekf5allj9pswz99/EfficientDetExampleDD.ipynb?dl=0"
+    url = "https://www.dropbox.com/s/ekf5allj9pswz99/EfficientDetExampleDD.ipynb?dl=1"
     with DownloadProgressBar(unit='B', unit_scale=True,
                              miniters=1, desc=url.split('/')[-1]) as t:
         urllib.request.urlretrieve(url, filename='EfficientDetExampleDD.ipynb', reporthook=t.update_to)
