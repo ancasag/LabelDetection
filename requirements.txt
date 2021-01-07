@@ -7,7 +7,7 @@ tqdm==4.31.0
 opencv_python==4.1.2.30
 XlsxWriter==1.2.6
 six==1.11.0
-lxml==4.2.4
+lxml==4.6.2
 matplotlib==3.0.3
 Keras==2.1.6
 Keras-Applications==1.0.6
@@ -19,7 +19,7 @@ mxnet_mkl==1.6.0b20191025
 pycocotools==2.0.0
 Pillow==7.0.0
 pyqt5==5.10.1
-lxml==4.2.4
+lxml==4.6.2
 mxnet==1.5.1.post0
 progressbar2==3.47.0
 sip==4.19.8
