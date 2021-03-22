@@ -195,21 +195,6 @@ Annotating a dataset of images might be a time-consuming task, but object detect
 
 By default, the transformation techniques applied for data distillation are histogram normalization and vertical flips, but the user can employ any of the techniques described in [techniques for TTA](#techniques-for-tta).
 
-## Citation
-
-Use this bibtex to cite this work:
-
-```
-@misc{CasadoGarcia20,
-  title={LabelDetection},
-  author={A. Casado-García and J. Heras},
-  year={2020},
-  note={\url{https://github.com/ancasag/LabelDetection}},
-}
-```
-
-## Acknowledgments
-This work was partially supported by Ministerio de Economía y Competitividad [MTM2017-88804-P], Ministerio de Ciencia, Innovación y Universidades [RTC-2017-6640-7], and Agencia de Desarrollo Económico de La Rioja [2017-I-IDD-00018].
 
 
 
