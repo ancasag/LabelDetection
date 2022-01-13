@@ -17,7 +17,7 @@ keras-retinanet==0.5.1
 numpy==1.14.6
 mxnet_mkl==1.6.0b20191025
 pycocotools==2.0.0
-Pillow==7.0.0
+Pillow==9.0.0
 pyqt5==5.10.1
 lxml==4.2.4
 mxnet==1.5.1.post0
