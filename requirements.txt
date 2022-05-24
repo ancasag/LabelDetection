@@ -1,7 +1,7 @@
 clodsa==1.2.37
 setuptools==40.6.2
 gluoncv==0.5.0
-tensorflow==1.14.0
+tensorflow==2.6.4
 imutils==0.5.1
 tqdm==4.31.0
 opencv_python==4.1.2.30
